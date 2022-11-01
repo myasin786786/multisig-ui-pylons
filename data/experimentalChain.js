@@ -1,5 +1,5 @@
 export const chainObj = {
-    "chain": {
+    "pylons-testnet-3": {
         chainId: process.env.NEXT_PUBLIC_CHAIN_ID ? process.env.NEXT_PUBLIC_CHAIN_ID:"pylons-testnet-3",
         chainName: process.env.NEXT_PUBLIC_NAME ? process.env.NEXT_PUBLIC_NAME:"pylons",
         rpc: process.env.NEXT_PUBLIC_RPC ? process.env.NEXT_PUBLIC_RPC:"https://rpc.pylons.tech/",
@@ -38,9 +38,9 @@ export const chainObj = {
                 coinGeckoId: process.env.NEXT_PUBLIC_COIN_GECKO_ID ? process.env.NEXT_PUBLIC_COIN_GECKO_ID :"pylon",
         },
         gasPriceStep: {
-            GAS_PRICE_STEP_LOW: process.env.NEXT_PUBLIC_GAS_PRICE_STEP_LOW ? process.env.NEXT_PUBLIC_GAS_PRICE_STEP_LOW:0.01,
-            GAS_PRICE_STEP_LOW: process.env.NEXT_PUBLIC_GAS_PRICE_STEP_MEDIUM ? process.env.NEXT_PUBLIC_GAS_PRICE_STEP_MEDIUM :0.025,
-            GAS_PRICE_STEP_LOW: process.env.NEXT_PUBLIC_GAS_PRICE_STEP_HIGH ? process.env.NEXT_PUBLIC_GAS_PRICE_STEP_HIGH :0.03,
+            low: process.env.NEXT_PUBLIC_GAS_PRICE_STEP_LOW ? process.env.NEXT_PUBLIC_GAS_PRICE_STEP_LOW:0.01,
+            medium: process.env.NEXT_PUBLIC_GAS_PRICE_STEP_MEDIUM ? process.env.NEXT_PUBLIC_GAS_PRICE_STEP_MEDIUM :0.025,
+            high: process.env.NEXT_PUBLIC_GAS_PRICE_STEP_HIGH ? process.env.NEXT_PUBLIC_GAS_PRICE_STEP_HIGH :0.03,
         },
     }
 }
