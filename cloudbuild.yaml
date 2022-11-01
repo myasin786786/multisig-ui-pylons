@@ -2,7 +2,7 @@ steps:
   - name: gcr.io/cloud-builders/docker
     args:
       - rmi
-      - '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:latest'
+      - '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME'
   - name: gcr.io/cloud-builders/docker
     args:
       - build
